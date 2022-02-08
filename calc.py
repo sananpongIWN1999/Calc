@@ -19,14 +19,23 @@ Significant constants
 number1=int(input("Insert the first value"))
 number2=int(input("Insert the second value"))
 
+operater = str(input("Select operations form +, -, *, / :"))
+
 addition=number1+number2
-print(f"The sumation for the two values is equal to: ,{addition}")
-
 subtraction=number1-number2
-print(f"The sumation for the two values is equal to: ,{subtraction}")
-
 multiplication=number1*number2
-print(f"The sumation for the two values is equal to: ,{multiplication}")
-
 division=number1/number2
-print(f"The sumation for the two values is equal to: ,{division}")
+
+if operater == "+" :
+       print(f"The addition for the two values is equal to: ,{addition}")
+
+elif operater ==  "-" :
+       print(f"The subraction for the two values is equal to: ,{subtraction}")
+
+elif operater == "*" :
+       print(f"The multiplication for the two values is equal to: ,{multiplication}")
+
+elif operater == "/" :
+       print(f"The division for the two values is equal to: ,{division}")
+else:
+        print("invalid input")
